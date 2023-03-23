@@ -1,0 +1,14 @@
+HD1501Mg
+torque: 4.8v -> 15.5 kg/cm
+speed: 0.16 sec/60°
+pulse cycle: 20 ms
+pulse width: [500 - 2100]us
+
+* De acuerdo con la formula:
+* Valor_del_contador = (Retardo_requerido/Periodo_del_reloj)-1
+* Ejemplo: Valor_del_contador= (2ms/1us)-1 = 1999
+* Debido a que TCNT0 es de 8 bits, volvemos a dividir:
+* Entonces lo tenemos que poner en un ciclo de 1999/200 = 9.995 aprox= 10 
+
+valorContador= (20ms/1u)=19k
+    19k/200 = 95
